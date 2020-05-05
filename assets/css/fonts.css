@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'graphik-medium';
+  src: url(/assets/fonts/Graphik-Medium.woff2);
+}
+
+@font-face {
+  font-family: 'graphik-regular';
+  src: url(/assets/fonts/Graphik-Regular.woff2);
+}

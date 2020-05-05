@@ -1,0 +1,257 @@
+@import url(fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'graphik-regular';
+  color: #767676;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Geral */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+}
+
+.section-content-left {
+  flex: 1;
+  align-self: center;
+}
+
+.section-content-left p {
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.section-content-left .section-content-title {
+  font-size: 48px;
+  color: #8A05BE;
+}
+
+.section-content-left .section-content-subtitle {
+  width: 460px;
+  color: #767676;
+}
+
+.section-content-left .section-content-link {
+  color: #8A05BE;
+  display: inline-block;
+  margin-top: 29px;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-color: #CCC;
+  transition:
+    .5s text-decoration ease;
+}
+
+.section-content-left .section-content-link:hover {
+  text-decoration-color: #8A05BE;
+}
+
+.section-content-right {
+  flex: 1;
+}
+
+.section-content-right img {
+  width: 100%;
+}
+
+
+/* Menu */
+
+#nav-bar {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0 0 0 32px;
+  border-bottom: 1px solid #CCC;
+}
+
+#nav-bar #nav-bar-left,
+#nav-bar #nav-bar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+#nav-bar #logo {
+  width: 45px;
+  height: 33px;
+  margin-right: 15px;
+}
+
+#nav-bar li {
+  margin: 29px 12px;
+}
+
+#nav-bar li a {
+  padding: 19px 0;
+  transition:
+    .5s color ease,
+    .5s background ease;
+}
+
+#nav-bar li:not(.button):hover a,
+#nav-bar li.active:hover a,
+#nav-bar li#login:hover a {
+  color: #BA4DE3;
+}
+#nav-bar li.button:hover a {
+  background: #BA4DE3;
+}
+
+#nav-bar li.active a {
+  color: #8A05BE;
+}
+
+#nav-bar li#login {
+  margin-right: 18px;
+}
+
+#nav-bar li#login a {
+  color: #8A05BE;
+}
+
+#nav-bar li.button {
+  margin-right: 0;
+}
+
+#nav-bar li.button a {
+  background: #8A05BE;
+  color: #FFF;
+  font-family: 'Arial';
+  padding: 31px 33px 30px 28px;
+}
+
+/* Conteúdo */
+
+
+/* Seção 1 */
+
+#section-1 {
+  margin-top: 145px;
+  margin-bottom: 128px;
+  position: relative;
+}
+
+#section-1 #section-1-bg {
+  width: 100%;
+  height: 752px;
+  object-fit: cover;
+}
+
+#section-1 #section-1-content {
+  position: absolute;
+  top: 0;
+}
+
+#section-1 #section-1-content p {
+  color: #FFF;
+}
+
+#section-1 #section-1-content .section-content-left {
+  padding: 0 95px 0 88px;
+}
+
+#section-1 #section-1-content #section-1-content-title {
+  font-size: 45px;
+  margin-bottom: 17px;
+}
+
+#section-1 #section-1-content #section-1-content-description {
+  width: 300px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+#section-1 #section-1-content #btn-want-be-nubank {
+  display: inline-block;
+  background: #8A05BE;
+  margin-top: 34px;
+  padding: 20px 32px;
+  font-size: 16px;
+  color: #FFF;
+  font-family: 'graphik-medium';
+  transition:
+    .5s background ease;
+}
+
+#section-1 #section-1-content .section-content-right {
+  align-self: flex-end;
+  position: relative;
+  bottom: -63px;
+  padding: 0 88px 0 95px;
+}
+
+#section-1 #section-1-content .section-content-right img {
+  width: 100%;
+}
+
+/* Seção 2 */
+
+#section-2 {
+  background: #F5F5F5;
+}
+
+#section-2 #section-2-content {
+  padding: 159px 0;
+}
+
+#section-2 #section-2-content .section-content-left {
+  flex: 1 1 42%;
+  align-self: center;
+}
+
+#section-2 #section-2-content .section-content-right {
+  flex: 1 1 58%;
+  align-self: center;
+}
+
+
+/* Seção 3 */
+
+#section-3 {
+  background: #FFF;
+}
+
+#section-3 #section-3-content {
+  padding: 107px 0 0;
+}
+
+#section-3 #section-3-content .section-content-left {
+  flex: 1 1 50%;
+  align-self: center;
+}
+
+#section-3 #section-3-content .section-content-right {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#section-3 #section-3-content .section-content-right img {
+  width: 342px;
+}
